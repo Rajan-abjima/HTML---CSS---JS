@@ -14,9 +14,11 @@ let person = {
 	lastName: "Kumar",
 	email  :"nitin.kumar@gmail.com",
 	greet: function(){
-	console.log()
+	console.log("My name is " + this.firstName);
 	}
 };
+
+person.greet();
 </script>
 </body>
 </html>

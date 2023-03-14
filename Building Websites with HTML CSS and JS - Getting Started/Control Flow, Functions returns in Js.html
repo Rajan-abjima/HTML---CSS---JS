@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width,  initial-scale=1" >
+<title>Control Flow and functions</title>
+</head>
+<body>
+<script>
+
+/*** let name="Nitin";
+{
+	let name="Sunil";
+}
+console.log(name);  ***/
+
+/*** let name = "Sunil";
+
+if (name=== "Nitin"){
+	console.log("Hi Nitin!");
+}else{
+	console.log("Wait, where's Nitin?");
+} ***/
+
+/*** let name = "Bablu";
+
+if (name === "Nitin"){
+	console.log("Hi Nitin!");
+}else if(name === "Sunil"){
+	console.log("Sunil, is that you?");
+}else{
+	console.log("Wait, where's Nitin?");
+} ***/
+
+/***  function greet(name){
+
+ if (name === "Nitin"){
+	console.log("Hi Nitin!");
+ }else if(name === "Sunil"){
+	console.log("Sunil, is that you?");
+ }else{
+	console.log("Wait, where's Nitin or Sunil?");
+ }
+}
+
+greet("Nitin");
+greet("Sunil");
+greet("Uday");
+***/
+
+function greet(name) {
+ let result = "";
+
+ if (name === "Nitin"){
+	result = "Hi Nitin!";
+ }else if (name === "Sunil"){
+	result = "Sunil, is that you?";
+ }else {
+	result = "Wait, where is Nitin or Sunil?";
+ }
+ return result;
+}
+
+let message = greet("Sunil");
+console.log(message);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event selector and listener</title>
+</head>
+<body>
+<button id="click-me">Click Me</button>
+<script>
+window.addEventListener("DOMContentLoaded", function(e) {
+	console.log("The page is loaded.");
+
+	let btn = document.querySelector("#click-me");
+	btn.addEventListener("click", function(e){
+	 console.log("The button was clicked.");
+	});
+});
+</script>
+</body>
+</html>

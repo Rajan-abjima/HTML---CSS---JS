@@ -42,3 +42,85 @@ display: inline-block;
 list-style: none;
 margin: 0 5px 0 5px;
 }
+
+main {
+display: block;
+background-color: #fff;
+padding : 3em 0 3em 0;
+min-height; 85%
+}
+
+footer {
+padding: 2em;
+}
+
+aside,
+article {
+padding: 2em;
+}
+
+aside{
+text-align: center;
+}
+
+article{
+width: 75%;
+}
+
+.columns{
+display: flex;
+}
+
+@media only screen and (min-width: 768px){
+	main{
+		display: flex;
+	}
+
+	aside{
+		margin-left: 2%;
+	}
+
+	.columns-desktop {
+	display: flex;
+	}
+}
+
+
+/* Pies */
+
+.pie {
+width: 200px;
+padding: 10px;
+margin: 10px;
+background-color: #fff;
+border: solid 1px #ccc;
+}
+
+.pie img{
+width: 10rem;
+height: auto;
+}
+
+.pie .title{
+font-weight: bold;
+}
+
+.pie .columns{
+width: 100%
+}
+
+.pie .price{
+text-align: right;
+}
+
+.pie .columns div{
+width: 50%;
+}
+
+.pie button{
+background-color: #f6aeae;
+padding: 10px;
+border: solid 1px #f6aeae;
+border-radius: 3px;
+color: #fff;
+}
