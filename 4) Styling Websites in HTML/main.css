@@ -1,0 +1,150 @@
+	body{
+		margin-top: 0px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: #e6e4d9;
+		font-family: 'lato','Segoe UI', 'Tahoma', Geneva, Verdena, san-serif;
+	}
+
+	#mainheader{
+		background-color: #a593c2;
+	
+	}
+	
+	h1{
+		color: #a593c2;
+		font-size: 40px;
+	}
+	
+	nav {
+		height: 60px;
+		width: 87vw;
+		margin: 0 auto 20px;
+	}
+	
+	#leftmenu{
+		float: left;
+		width: 30%;
+		margin-bottom: 20px;
+	}
+	
+	#main{
+		float: right;
+		width: 70%;
+		margin-bottom:20px;
+		}
+	
+	nav>ul{
+		list-style-type:none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav>ul>li{
+		float: left;
+	}
+	
+	nav>ul>li a{
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	table,
+	td,th{
+		border: 1px solid black;
+		border-collapse: collapse;
+		padding: 5px;
+	}
+	
+	footer{
+		clear: both;
+		width: 100%;
+		
+		padding: 30px;
+	}
+	
+	.searchbox {
+		padding : 5px;
+		margin: 10px 10px;
+		width: 200px
+	}
+	
+	p{
+		font:18px;
+	}
+	
+	h3{
+		font:22px;
+	}
+	
+	li{
+		font-weight: bold;
+		line-height: 1.5;
+	}
+	
+	figcaption{
+		font-style: italic;
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6{
+		letter-spacing:1px;
+		text-transform: capitalize;
+		font-family: 'Cookie',Verdana, Arial, san-serif;
+		font-weight: normal;
+	}
+	
+	h4{
+		text-align: center;
+	}
+	
+	.promotion{
+		background-color: #23cea6;
+		color: white;
+		width: 450px;
+		text-align:	center;
+		border: 10px solid #a693c2;
+		padding: 20px;
+		margin-bottom: 50px;
+		}
+
+	.promotion img{
+		width: 50%;
+	}
+	
+	.promotion-purple{
+		background-color: #a673c2;
+		border-color: #23cea6;
+	}
+	
+	#sidebar-heading{
+		font-size: 24px;
+	}
+	
+	#leftmenu a{
+		color: #199175;
+	}
+	
+	#leftmenu a:hover{
+		color: #116552;
+	}
+	
+	tbody>tr:nth-of-type(odd){
+		background-color: #b4ddd3;
+	}
+	
+	tbody>tr:nth-of-type(even){
+		background-color: #faebd7;
+	}
+	
+	thead{
+		background-color: #00CED1;
+	}
