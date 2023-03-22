@@ -36,15 +36,25 @@
 		
 		<main id="main">
 			<h1>Contact Us</h1>
-			<form action="search.html" method="POST" enctype="application/x-form-urlencoded">
+			<form action="contact.html" method="POST" enctype="application/x-form-urlencoded">
 			<fieldset>
 			<legend>Contact Information</legend>
-			<label for="nameField">Your Name: </label> <input type="text" id="nameField" name="customerName"><br>
-			<label for="emailField">Your Email: </label> <input type="mail" id="emailField" name="customerEmail"><br>
-			<label for="phoneField">Your Phone: </label> <input type="tel" id="phoneField" name="customerPhone">
-			<label><input type="radio" name="phoneType" value="cell"> Cell</label> 
-			<label><input type="radio" name="phoneType" value="work"> Work</label>
-			<label><input type="radio" name="phoneType" value="home"> Home</label> 
+			<p>
+				<label for="nameField">*Your Name: </label>
+				<input type="text" id="nameField" required minlength="10" maxlength="70" name="customerName">
+			</p>
+			<p>	
+				<label for="emailField">Your Email: </label>
+				<input type="mail" id="emailField" name="customerEmail">
+			</p>
+			<p>
+				<label for="phoneField">Your Phone: </label>
+				<input type="tel" id="phoneField" pattern="\d{10}" name="customerPhone">
+			</p>
+			<p> <label>Phone Type:</label></p>
+				<label><input type="radio" name="phoneType" value="cell"> Cell</label> 
+				<label><input type="radio" name="phoneType" value="work"> Work</label>
+				<label><input type="radio" name="phoneType" value="home"> Home</label> 
 			<br>
 			Ok to contact me:
 			<input type="checkbox" name="okToContact" value="phone"> by phone
@@ -56,7 +66,7 @@
 			
 			<fieldset>
 				<legend>Feedback</legend>
-			<textarea tabindex="1" name="feedbackText" cols="40" rows="3"></textarea><br>
+			<textarea required tabindex="1" name="feedbackText" cols="40" rows="3"></textarea><br>
 			
 			Feedback Type:<br><select tabindex="2" name="feedbackType" multiple="multiple" size="6">
 				<optgroup label="Stores">
